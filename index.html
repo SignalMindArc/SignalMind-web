@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SignalMind — The Architecture of Stability</title>
+    <meta name="description"
+        content="Physics‑aligned, deterministic stabilization across domains — PulseFlow, SkyAlign, SeismoMind, powered by LorenzCore." />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <header class="nav">
+        <div class="container nav-inner">
+            <div class="brand"><span class="logo"></span> SignalMind</div>
+            <nav aria-label="Primary">
+                <a href="#framework">Framework</a>
+                <a href="#domains">Domains</a>
+                <a href="#diff">Why Us</a>
+                <a href="#impact">Impact</a>
+                <a href="#metrics">Metrics</a>
+                <a href="#dev">Developers</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO: "Stability Across Every System" -->
+    <main class="hero">
+        <!-- Cinematic background: planet + Lorenz attractor -->
+        <div class="scene" aria-hidden="true">
+            <div class="planet"></div>
+            <!-- <div class="attractor">
+                <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
+                    <path
+                        d="M400 400 C 300 300 260 280 220 320 S 210 420 280 470 380 500 420 540 520 640 580 580 560 460 480 420 420 380 400 400" />
+                    <path
+                        d="M400 410 C 290 290 250 260 200 315 S 200 440 280 500 380 530 420 570 540 660 600 585 560 450 470 410 420 370 400 410"
+                        opacity=".6" />
+                </svg>
+            </div> -->
+        </div>
+
+        <div class="container">
+            <div class="pill">Stability Across Every System</div>
+            <div class="carousel" aria-roledescription="carousel">
+                <div class="slides" id="slides">
+                    <!-- PulseFlow -->
+                    <section class="slide active" aria-roledescription="slide"
+                        aria-label="PulseFlow Suite — Biological Stability Reimagined">
+                        <h1>SignalMind — <span class="gtext">Physics‑Aligned</span> <span
+                                class="hl">Intelligence</span>.</h1>
+                        <p class="lead">From human physiology to planetary flows, we build systems that restore
+                            coherence through the mathematics of stability.</p>
+                        <div class="cta-row">
+                            <a class="btn btn-primary" href="#framework">Explore Technology</a>
+                            <a class="btn btn-ghost" href="#demo">Watch Framework in Action</a>
+                        </div>
+                    </section>
+                    <!-- SkyAlign -->
+                    <section class="slide" aria-roledescription="slide" aria-label="SkyAlign — Planetary Clarity">
+                        <h1>SkyAlign — Planetary Clarity.</h1>
+                        <p class="lead">Removing atmospheric distortion through physics‑informed stabilization. Chaos →
+                            Convergence for Earth observation.</p>
+                        <div class="cta-row">
+                            <a class="btn btn-primary" href="#domains">View Domains</a>
+                            <a class="btn btn-ghost" href="#metrics">Quick Metrics</a>
+                        </div>
+                    </section>
+                    <!-- SeismoMind -->
+                    <section class="slide" aria-roledescription="slide" aria-label="SeismoMind — Geophysical Awareness">
+                        <h1>SeismoMind — Geophysical Awareness.</h1>
+                        <p class="lead">Revealing order beneath seismic chaos with deterministic stabilizers that
+                            preserve physical energy relationships.</p>
+                        <div class="cta-row">
+                            <a class="btn btn-primary" href="#domains">Explore SeismoMind</a>
+                            <a class="btn btn-ghost" href="#impact">See Impact</a>
+                        </div>
+                    </section>
+                    <!-- LorenzCore -->
+                    <section class="slide" aria-roledescription="slide"
+                        aria-label="LorenzCore — The Computational Foundation">
+                        <h1>LorenzCore — The Computational Foundation.</h1>
+                        <p class="lead">The universal stabilizer at the heart of every SignalMind system —
+                            equation‑driven, energy‑conserving, and real‑time adaptive.</p>
+                        <div class="cta-row">
+                            <a class="btn btn-primary" href="#framework">See Framework</a>
+                            <a class="btn btn-ghost" href="#dev">Developer Access</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="arrows"><button class="arrow" id="prev" aria-label="Previous slide">◂</button><button
+                        class="arrow" id="next" aria-label="Next slide">▸</button></div>
+                <div class="dots" id="dots" role="tablist" aria-label="Slide indicators"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FRAMEWORK -->
+    <section id="framework" class="section">
+        <div class="container grid" style="grid-template-columns:1.1fr .9fr">
+            <div>
+                <h2>One Law, <span class="gtext">Many Worlds</span>.</h2>
+                <p class="muted"><strong>“Every SignalMind system is governed by the same stabilizer equation — tuned
+                        not by data, but by nature itself.”</strong></p>
+                <p>Unlike AI systems that learn from samples, the SignalMind framework restores structure directly from
+                    physical laws. Each domain — cardiac, atmospheric, seismic — is an instantiation of the same
+                    stabilizer, projected into different energy spaces.</p>
+                <div class="flow">
+                    <span class="chip">Unified Stabilizer Engine</span>
+                    <span class="chip">Deterministic Behavior</span>
+                    <span class="chip">Physics‑Level Explainability</span>
+                    <span class="chip">Cross‑Domain Scalability</span>
+                </div>
+            </div>
+            <div class="card" aria-hidden="true">
+                <h3 style="margin:0 0 8px">Stabilizer Schematic</h3>
+                <svg viewBox="0 0 760 260" style="width:100%;height:auto">
+                    <!-- Noisy Input -->
+                    <rect x="20" y="40" width="150" height="60" rx="12" fill="var(--card2)" stroke="var(--line)" />
+                    <text x="95" y="75" text-anchor="middle" fill="var(--ink)" font-size="14">Noisy Input</text>
+                    <!-- Arrow -->
+                    <path d="M170 70 L220 70" stroke="var(--gold)" />
+                    <polygon points="220,70 212,66 212,74" fill="var(--gold)" />
+                    <!-- LorenzCore -->
+                    <rect x="220" y="40" width="160" height="60" rx="12" fill="var(--card2)" stroke="var(--line)" />
+                    <text x="300" y="75" text-anchor="middle" fill="var(--ink)" font-size="14">LorenzCore
+                        Stabilizer</text>
+                    <!-- Arrow -->
+                    <path d="M380 70 L430 70" stroke="var(--gold)" />
+                    <polygon points="430,70 422,66 422,74" fill="var(--gold)" />
+                    <!-- Adaptive Domain Module -->
+                    <rect x="430" y="40" width="190" height="60" rx="12" fill="var(--card2)" stroke="var(--line)" />
+                    <text x="525" y="75" text-anchor="middle" fill="var(--ink)" font-size="14">Adaptive Domain
+                        Module</text>
+                    <!-- Arrow -->
+                    <path d="M620 70 L690 70" stroke="var(--gold)" />
+                    <polygon points="690,70 682,66 682,74" fill="var(--gold)" />
+                    <!-- Coherent Output -->
+                    <rect x="690" y="40" width="150" height="60" rx="12" fill="var(--card2)" stroke="var(--line)" />
+                    <text x="765" y="75" text-anchor="middle" fill="var(--ink)" font-size="14">Coherent Output</text>
+                    <!-- baseline wave under -->
+                    <path d="M30 160 C 100 145, 140 175, 200 160 S 320 145, 380 160 540 175, 600 160 700 145, 760 160"
+                        fill="none" stroke="var(--blue)" stroke-width="2" />
+                </svg>
+                <p class="muted" style="margin-top:8px">Animated schematic: Noisy Input → LorenzCore Stabilizer →
+                    Adaptive Domain Module → Coherent Output.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOMAINS OF CLARITY (4 pillars) -->
+    <section id="domains" class="section">
+        <div class="container">
+            <h2>The <span class="gtext">Domains</span> of Clarity</h2>
+            <p class="muted">Four product pillars — individually powerful, collectively unified.</p>
+            <div class="domains" style="margin-top:14px">
+                <style>
+                    article.product>h3 {
+                        color: #3be5ff;
+                        text-shadow: 0px 0px 10px rgb(125, 140, 234);
+                    }
+                </style>
+                <!-- PulseFlow -->
+                <article class="card elevate product accent-ecg">
+                    <h3>pulseFLOW Suite — Biological Coherence Systems</h3>
+                    <p class="muted">Adaptive stabilization for biomedical signals.</p>
+                    <svg viewBox="0 0 600 110" class="viz" role="img" aria-label="Stylized ECG waveform">
+                        <path class="trace stroke-ecg"
+                            d="M0 70 C 40 70, 60 70, 80 70 L 120 70 140 30 150 70 155 50 165 90 180 70 220 70 240 20 255 70 265 55 275 95 290 70 600 70" />
+                    </svg>
+                    <p>PulseFlow Suite redefines how physiological data is cleaned, stabilized, and understood. It
+                        restores signal integrity through deterministic stabilizers — not statistical prediction.</p>
+                    <ul class="list">
+                        <li>SignalMind ECG (v2.3): Restores cardiac signals distorted by motion or hardware artifacts.
+                        </li>
+                        <li>SignalMind EEG (v2.2): Stabilizes cortical waveforms for research and diagnostics.</li>
+                    </ul>
+                    <p><strong>Core features:</strong> Physics‑aligned denoising (VAE–TAESD derivative core) • Spectral
+                        phase integrity • Clinical‑grade intelligibility (>99%) • Adaptive response to signal drift •
+                        SDK & research APIs.</p>
+                    <p class="muted"><em>“Biomedical clarity should be explainable, measurable, and repeatable —
+                            PulseFlow ensures that every heartbeat and brainwave remains physically true.”</em></p>
+                </article>
+                <!-- SkyAlign -->
+                <article class="card elevate product accent-sky">
+                    <h3>SkyAlign — Planetary Clarity</h3>
+                    <p class="muted">Atmospheric and orbital stabilization for Earth observation.</p>
+                    <svg viewBox="0 0 600 110" class="viz" role="img" aria-label="Stylized atmospheric waveform">
+                        <path class="trace stroke-sky"
+                            d="M0 70 C 40 40, 80 100, 120 70 S 200 40, 240 70 320 100, 360 70 440 40, 480 70 560 100, 600 70" />
+                    </svg>
+                    <p>SkyAlign transforms raw satellite imagery into physically‑coherent clarity. It stabilizes clouds,
+                        haze, and spectral noise using deterministic stabilizer flows validated across 200+ global
+                        scenes.</p>
+                    <ul class="list">
+                        <li><strong>Core Engine:</strong> SkyClear Nexus v4.5</li>
+                        <li>83% stabilization, 75% cloud reduction across 8 climate zones</li>
+                        <li>Operates without ML or training data — pure physics inference</li>
+                        <li>Dual pipelines: <em>Aurora</em> (dynamic clarity) & <em>Recovery</em> (dense environments)
+                        </li>
+                    </ul>
+                    <p><strong>Key features:</strong> Cloud suppression with spectral fidelity • NDVI/index preservation
+                        • Scene‑aware routing • Real‑time on Sentinel‑2.</p>
+                    <p class="muted"><em>“SkyAlign turns Earth imagery into an interpretable canvas — where every pixel
+                            reflects the world, not noise.”</em></p>
+                </article>
+                <!-- SeismoMind -->
+                <article class="card elevate product accent-seis">
+                    <h3>SeismoMind — Geophysical Awareness</h3>
+                    <p class="muted">Stabilizing the hidden patterns of the Earth.</p>
+                    <svg viewBox="0 0 600 110" class="viz" role="img" aria-label="Stylized seismic waveform">
+                        <path class="trace stroke-seis"
+                            d="M0 70 C 30 72, 60 68, 90 70 120 80, 150 58, 180 70 210 110, 240 30, 270 70 300 76, 330 64, 360 70 390 95, 420 45, 450 70 480 72, 510 68, 540 70 570 88, 600 52, 630 70" />
+                    </svg>
+                    <p>SeismoMind applies SignalMind’s stabilizer to seismic and geodynamic data, transforming chaotic
+                        vibration fields into structured, interpretable dynamics. Not prediction — revelation.</p>
+                    <ul class="list">
+                        <li>Restores structure in low‑SNR traces</li>
+                        <li>Preserves amplitude & frequency relationships</li>
+                        <li>Converts random noise into coherent energy flow representation</li>
+                    </ul>
+                    <p class="muted"><em>“Every tremor holds a pattern — SeismoMind reveals it.”</em></p>
+                </article>
+                <!-- LorenzCore -->
+                <article class="card elevate product accent-core">
+                    <h3>LorenzCore — The Computational Foundation</h3>
+                    <p class="muted">The mathematical kernel enabling universal stability.</p>
+                    <p>LorenzCore is the equation‑driven substrate beneath all SignalMind systems. Built from the
+                        Unified Stabilizer Equation, it bridges nonlinear dynamics, fluid coherence, and adaptive
+                        scaling into one computational fabric.</p>
+                    <ul class="list">
+                        <li>Core solver for 1D–3D stabilizer equations</li>
+                        <li>Compatible with Lorenz63/96 & Navier–Stokes formulations</li>
+                        <li>Energy‑conserving, real‑time adaptive</li>
+                        <li>Extensible to multi‑domain simulations</li>
+                    </ul>
+                    <p class="muted"><em>“LorenzCore turns the mathematics of balance into executable code — the
+                            language of universal coherence.”</em></p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFFERENTIATION -->
+    <section id="diff" class="section">
+        <div class="container">
+            <h2>Beyond AI. Toward Reality.</h2>
+            <div class="diff">
+                <div class="card">
+                    <h3>Conventional AI</h3>
+                    <ul class="list">
+                        <li>Pattern‑fitting and probabilistic</li>
+                        <li>Requires training & frequent retraining</li>
+                        <li>Opaque, non‑deterministic outputs</li>
+                        <li>Prone to hallucination drift</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>SignalMind Stabilizers</h3>
+                    <ul class="list">
+                        <li>Equation‑driven, deterministic</li>
+                        <li>Domain‑agnostic & physics‑aligned</li>
+                        <li>Stable, interpretable outputs</li>
+                        <li>Zero drift — coherence is conserved, not invented</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="muted" style="margin-top:10px"><strong>“SignalMind doesn’t predict reality. It preserves
+                    it.”</strong></p>
+        </div>
+    </section>
+
+    <!-- IMPACT DOMAINS -->
+    <section id="impact" class="section">
+        <div class="container">
+            <h2>Impact Domains</h2>
+            <div class="impact" style="margin-top:10px">
+                <div class="tile">Healthcare R&D — physiology signal intelligence</div>
+                <div class="tile">Earth Observation — cloudless satellite imagery</div>
+                <div class="tile">Seismic Intelligence — stable subsurface reconstruction</div>
+                <div class="tile">Climate Simulation — LorenzCore‑driven modeling</div>
+                <div class="tile">Scientific Computing — coherence modules for engines</div>
+                <div class="tile">Embedded Systems — lightweight cores for devices</div>
+            </div>
+            <p class="muted" style="margin-top:8px">Wherever signals exist, stability becomes intelligence.</p>
+        </div>
+    </section>
+
+    <!-- METRICS SNAPSHOT -->
+    <section id="metrics" class="section" style="background:rgba(255,255,255,.02)">
+        <div class="container">
+            <h2>Metrics Snapshot — Validation Across Worlds</h2>
+            <div class="metrics" style="margin-top:14px">
+                <div class="metric">
+                    <div class="label">SkyAlign</div>
+                    <div class="value"><span class="gtext">83%</span> stabilization</div>
+                </div>
+                <div class="metric">
+                    <div class="label">PulseFlow</div>
+                    <div class="value"><span class="gtext">99%</span> intelligibility</div>
+                </div>
+                <div class="metric">
+                    <div class="label">SeismoMind</div>
+                    <div class="value">4× energy clarity</div>
+                </div>
+                <div class="metric">
+                    <div class="label">LorenzCore</div>
+                    <div class="value">0% numerical drift</div>
+                </div>
+            </div>
+            <p class="muted" style="margin-top:10px">Every result is physically interpretable, reproducible, and
+                domain‑agnostic.</p>
+        </div>
+    </section>
+
+    <!-- DEVELOPER ACCESS -->
+    <section id="dev" class="section">
+        <div class="container grid" style="grid-template-columns:1.05fr .95fr">
+            <div>
+                <h2>Build with Stability</h2>
+                <p class="muted">The SignalMind SDK brings LorenzCore‑based coherence restoration to any developer,
+                    researcher, or institution. Lightweight, modular, physics‑aligned.</p>
+                <ul class="list">
+                    <li>REST / Python / C++ interfaces</li>
+                    <li>Supports biomedical, geophysical, and satellite signals</li>
+                    <li>Coherence maps, stabilizer modules, and adaptive kernels</li>
+                    <li>Offline‑compatible for embedded deployment</li>
+                </ul>
+                <div class="cta-row"><a class="btn btn-primary" href="#">Request API Access</a><a class="btn btn-ghost"
+                        href="#">Join Developer Beta</a></div>
+            </div>
+            <div class="card">
+                <h3 style="margin:0 0 6px">SDK Examples</h3>
+                <pre class="mono"
+                    style="margin:0;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto"><code>from signalmind import LorenzCore, PulseFlowECG
+
+core = LorenzCore(mode="real_time")
+stabilizer = PulseFlowECG(core, fs=360)
+clean = stabilizer.process(raw_ecg)</code></pre>
+                <pre class="mono"
+                    style="margin-top:10px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto"><code>curl -X POST https://api.signalmind.ai/stabilize \
+  -H "Content-Type: application/json" \
+  -d '{"domain":"ecg","signal":[...],"fs":360}'</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDERS' INSIGHT -->
+    <section class="section">
+        <div class="container">
+            <blockquote class="card" style="font-size:1.05rem">
+                “Nature doesn’t learn — it stabilizes.”
+                <div class="muted" style="margin-top:6px">SignalMind translates that law into computation. Every
+                    stabilizer is a small equation that keeps reality coherent — not simulated, but preserved. We’re not
+                    building AI to replace understanding. We’re building physics that restores it.</div>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- DEMO: BEFORE/AFTER (optional anchor from hero) -->
+    <section id="demo" class="section">
+        <div class="container">
+            <h2>Framework in Action — ECG Stabilization</h2>
+            <p class="muted">Drag to compare a noisy input against the stabilized output with R‑peaks preserved.</p>
+            <div class="split-wrap" style="margin-top:12px">
+                <div class="split" id="split">
+                    <svg viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
+                        <rect width="1200" height="400" fill="#0a0e17" />
+                        <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+                            <path
+                                d="M0 50 H1200M0 100 H1200M0 150 H1200M0 200 H1200M0 250 H1200M0 300 H1200M0 350 H1200" />
+                        </g>
+                        <polyline id="noisy" fill="none" stroke="#7ad5ff" stroke-width="2" points="" />
+                    </svg>
+                    <div class="after" id="after" style="width:50%">
+                        <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+                            <rect width="1200" height="400" fill="#0a0e17" />
+                            <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+                                <path
+                                    d="M0 50 H1200M0 100 H1200M0 150 H1200M0 200 H1200M0 250 H1200M0 300 H1200M0 350 H1200" />
+                            </g>
+                            <polyline id="clean" fill="none" stroke="#ffffff" stroke-width="2.4" points="" />
+                            <g id="rpeaks"></g>
+                        </svg>
+                    </div>
+                    <div class="divider" id="divider"></div>
+                    <div class="grip mono">↔</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container"
+            style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+            <div>© <span id="year"></span> SignalMind Technologies</div>
+            <nav aria-label="Footer"><a href="#framework">Technology</a> · <a href="#domains">Projects</a> · <a
+                    href="#dev">API/SDK</a> · <a href="#">Contact</a></nav>
+            <div class="muted">“Clarity across all systems.”</div>
+        </div>
+    </footer>
+
+    <script>
+        // Year
+        (function () { var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear(); }());
+
+        // HERO CAROUSEL (6–8s slides)
+        const slides = Array.from(document.querySelectorAll('.slide'));
+        const dotsWrap = document.getElementById('dots');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+        let idx = 0, timer;
+        function renderDots() { dotsWrap.innerHTML = ''; slides.forEach((_, i) => { const b = document.createElement('button'); b.className = 'dot' + (i === idx ? ' active' : ''); b.setAttribute('role', 'tab'); b.title = slides[i].getAttribute('aria-label'); b.addEventListener('click', () => go(i)); dotsWrap.appendChild(b); }); }
+        function show() { slides.forEach((s, i) => s.classList.toggle('active', i === idx)); Array.from(dotsWrap.children).forEach((d, i) => d.classList.toggle('active', i === idx)); }
+        function go(i) { idx = (i + slides.length) % slides.length; show(); resetTimer(); }
+        function resetTimer() { clearInterval(timer); timer = setInterval(() => go(idx + 1), 7000); }
+        if (prevBtn && nextBtn) { prevBtn.addEventListener('click', () => go(idx - 1)); nextBtn.addEventListener('click', () => go(idx + 1)); }
+        renderDots(); show(); resetTimer();
+
+        // Synthetic ECG polylines for demo
+        function genECGPoints(width = 1200, height = 400, noise = 0) {
+            const pts = []; const spb = 240; // px per beat
+            for (let x = 0; x < width; x++) {
+                const local = (x % spb);
+                const qrs = 12 * Math.exp(-0.5 * ((local - 20) / 2) ** 2) - 40 * Math.exp(-0.5 * ((local - 25) / 1.2) ** 2) + 110 * Math.exp(-0.5 * ((local - 28) / 1.6) ** 2) - 25 * Math.exp(-0.5 * ((local - 32) / 1.4) ** 2) + 18 * Math.exp(-0.5 * ((local - 36) / 2.2) ** 2);
+                const base = 200 + 20 * Math.sin((x / width) * 8 * Math.PI);
+                const y = base - qrs + (noise ? (Math.random() - 0.5) * noise : 0);
+                const yy = Math.max(20, Math.min(height - 20, y));
+                pts.push(`${x},${yy}`);
+            }
+            return pts.join(' ');
+        }
+        document.getElementById('noisy').setAttribute('points', genECGPoints(1200, 400, 28));
+        document.getElementById('clean').setAttribute('points', genECGPoints(1200, 400, 2));
+        const rpeaksG = document.getElementById('rpeaks');
+        for (let i = 210; i < 1200; i += 240) { const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle'); c.setAttribute('cx', i); c.setAttribute('cy', 120); c.setAttribute('r', 5); c.setAttribute('fill', '#44dfb9'); rpeaksG.appendChild(c); }
+
+        // Split slider interaction
+        const after = document.getElementById('after');
+        const divider = document.getElementById('divider');
+        const split = document.getElementById('split');
+        let dragging = false; function setX(clientX) { const rect = split.getBoundingClientRect(); let x = Math.max(rect.left, Math.min(clientX, rect.right)); const pct = (x - rect.left) / rect.width * 100; after.style.width = pct + '%'; divider.style.left = pct + '%'; }
+        divider.addEventListener('mousedown', () => dragging = true);
+        window.addEventListener('mouseup', () => dragging = false);
+        window.addEventListener('mousemove', e => { if (dragging) setX(e.clientX) });
+        divider.addEventListener('touchstart', () => dragging = true, { passive: true });
+        window.addEventListener('touchend', () => dragging = false);
+        window.addEventListener('touchmove', e => { if (dragging) setX(e.touches[0].clientX) }, { passive: true });
+        split.addEventListener('click', e => setX(e.clientX));
+    </script>
+</body>
+
+</html>
