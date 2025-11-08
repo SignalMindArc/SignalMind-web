@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SignalMind • SkyAlign v4.5 NEXUS</title>
+    <meta name="description"
+        content="SkyAlign v4.5 NEXUS — Universal Stabilizer for Atmospheric Coherence by SignalMind." />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <header class="nav">
+        <div class="container nav-inner">
+            <div class="brand"><span class="logo"></span> SignalMind</div>
+            <nav aria-label="Primary">
+                <a href="#hero">Overview</a>
+                <a href="#core">Technical Core</a>
+                <a href="#pipeline">Pipelines</a>
+                <a href="#metrics">Metrics</a>
+                <a href="#benchmarks">Benchmarks</a>
+                <a href="#dev">Developers</a>
+                <a href="#resources">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="hero" class="hero">
+        <div class="orbs"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+        <div class="container">
+            <span class="pill">SignalMind Research Suite • /projects/skyalign</span>
+            <h1>SkyAlign v4.5 NEXUS</h1>
+            <p class="lead">
+                Universal Stabilizer for Atmospheric Coherence.
+                A physics-informed clarity engine that reconstructs clouded and noisy satellite imagery
+                without training data. Validated on 200+ Sentinel-2 scenes across 8 climate zones,
+                7 land types, and 4 seasons.
+            </p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="#metrics">View Validation Results →</a>
+                <a class="btn btn-ghost" href="#resources">Download Metrics Dataset</a>
+                <a class="btn btn-ghost" href="#contact">Contact Research Team</a>
+            </div>
+
+            <div class="metrics">
+                <div class="metric">
+                    <div class="label">Average Score</div>
+                    <div class="value">83.1%</div><span class="spark"></span>
+                </div>
+                <div class="metric">
+                    <div class="label">Cloud Reduction</div>
+                    <div class="value">75.3%</div><span class="spark"></span>
+                </div>
+                <div class="metric">
+                    <div class="label">Edge Preservation</div>
+                    <div class="value">85.0%</div><span class="spark"></span>
+                </div>
+                <div class="metric">
+                    <div class="label">Runtime</div>
+                    <div class="value">~9.3 s / image</div><span class="spark"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- OVERVIEW -->
+    <section class="section">
+        <div class="container grid two">
+            <div class="card gradient">
+                <h2>Overview</h2>
+                <p class="muted">Atmospheric extension of the SignalMind Stabilizer</p>
+                <div class="divider"></div>
+                <p>
+                    SkyAlign applies deterministic stabilizer dynamics to Earth observation data, restoring optical
+                    coherence and spectral balance directly from raw Sentinel-2 imagery — no neural training, priors,
+                    or labeled datasets.
+                </p>
+                <ul class="bullets">
+                    <li>200 global validation scenes</li>
+                    <li>Multi-pipeline adaptive processing (Aurora + Recovery)</li>
+                    <li>Physics-driven coherence routing (no ML weights)</li>
+                    <li>Cross-domain lineage: PulseFlow (biomedical), SeismoMind (geophysical)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Key Highlights</h3>
+                <div class="table" role="region" aria-label="Highlights">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Highlight</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Average Score</td>
+                                <td>83.1%</td>
+                            </tr>
+                            <tr>
+                                <td>Cloud Reduction</td>
+                                <td>75.3%</td>
+                            </tr>
+                            <tr>
+                                <td>Edge Preservation</td>
+                                <td>85.0%</td>
+                            </tr>
+                            <tr>
+                                <td>Avg Processing Time</td>
+                                <td>~9.3 s</td>
+                            </tr>
+                            <tr>
+                                <td>Pipelines</td>
+                                <td>Aurora / Recovery</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top:12px"><a href="#benchmarks">See Benchmarks →</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL CORE -->
+    <section id="core" class="section">
+        <div class="container grid two">
+            <div class="card">
+                <h2>Technical Core</h2>
+                <p class="muted">Stabilizer Equation Adaptation</p>
+                <div class="divider"></div>
+                <p>
+                    The Unified Stabilizer Equations — initially derived for time-domain biological signals — are
+                    mapped to the spatial–spectral domain of satellite imagery.
+                </p>
+                <div class="table" role="region" aria-label="Stabilizer Adaptation">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Original Domain</th>
+                                <th>SkyAlign Adaptation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ECG Stabilizer</td>
+                                <td>Temporal signal correction</td>
+                                <td>Bandwise gradient regulation</td>
+                            </tr>
+                            <tr>
+                                <td>EEG Coherence Matrix</td>
+                                <td>Spatial-temporal coherence</td>
+                                <td>Cross-band optical coherence</td>
+                            </tr>
+                            <tr>
+                                <td>Lorenz Flow Integrator</td>
+                                <td>System dynamic stabilizer</td>
+                                <td>Spectral motion compensator</td>
+                            </tr>
+                            <tr>
+                                <td>Entropy Gate</td>
+                                <td>Neural noise control</td>
+                                <td>Cloud/texture uncertainty control</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card gradient">
+                <h3>Conceptual Diagram</h3>
+                <p class="muted">Noisy Input ↓ Stabilizer Core ↓ Ensemble Dynamics ↓ Coherent Output</p>
+
+                <div class="viz vertical large" aria-hidden="true">
+                    <svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid meet" class="viz" role="img"
+                        aria-label="Vertical Stabilizer Flow">
+                        <defs>
+                            <linearGradient id="flow-v" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="var(--accent1)" stop-opacity="0.4" />
+                                <stop offset="100%" stop-color="var(--accent2)" stop-opacity="0.9" />
+                            </linearGradient>
+
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+
+                            <marker id="arrowhead-v" markerWidth="8" markerHeight="8" refX="3" refY="3" orient="auto">
+                                <path d="M0,0 L6,3 L0,6 Z" fill="currentColor" />
+                            </marker>
+                        </defs>
+
+                        <!-- background flow line -->
+                        <path d="M200 80 L200 720" stroke="url(#flow-v)" stroke-width="2" opacity="0.25" fill="none" />
+
+                        <!-- boxes -->
+                        <rect x="110" y="40" width="180" height="80" rx="14" class="box" />
+                        <rect x="110" y="200" width="180" height="100" rx="14" class="box glow" filter="url(#glow)" />
+                        <rect x="110" y="380" width="180" height="100" rx="14" class="box" />
+                        <rect x="110" y="560" width="180" height="80" rx="14" class="box" />
+
+                        <!-- arrows -->
+                        <path d="M200 120 L200 200" class="arrow" marker-end="url(#arrowhead-v)" />
+                        <path d="M200 300 L200 380" class="arrow" marker-end="url(#arrowhead-v)" />
+                        <path d="M200 480 L200 560" class="arrow" marker-end="url(#arrowhead-v)" />
+
+                        <!-- labels -->
+                        <text x="200" y="85" text-anchor="middle" class="label">Noisy Input</text>
+                        <text x="200" y="250" text-anchor="middle" class="label">Stabilizer Core</text>
+                        <text x="200" y="270" text-anchor="middle" class="label small">Lorenz • Entropy Gate</text>
+                        <text x="200" y="430" text-anchor="middle" class="label">Ensemble Dynamics</text>
+                        <text x="200" y="595" text-anchor="middle" class="label">Coherent Output</text>
+
+                        <!-- pulse dots -->
+                        <circle cx="200" cy="160" r="4" class="pulse" />
+                        <circle cx="200" cy="340" r="4" class="pulse delay1" />
+                        <circle cx="200" cy="520" r="4" class="pulse delay2" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PIPELINES -->
+    <section id="pipeline" class="section">
+        <div class="container grid two">
+            <div class="card gradient accent-eeg">
+                <h2>Aurora Pipeline</h2>
+                <p class="muted">Thin clouds, cirrus haze, high-coherence scenes</p>
+                <div class="divider"></div>
+                <p>Uses adaptive gating between coherence and edge gradients.</p>
+                <ul class="bullets">
+                    <li>Sequence: ECG Stabilizer → Lorenz Flow → Coherence Gating → Blend</li>
+                    <li>Applied in 197 / 200 images</li>
+                </ul>
+            </div>
+
+            <div class="card gradient accent-ecg">
+                <h2>Recovery Pipeline</h2>
+                <p class="muted">Dense forest, low-coherence conditions</p>
+                <div class="divider"></div>
+                <p>NDVI-driven compensation with entropy-regulated spectral balance.</p>
+                <ul class="bullets">
+                    <li>Sequence: Spectral Indices → Lorenz Flow (Adaptive) → ECG Stabilization → Entropy Fusion</li>
+                    <li>Applied in 3 / 200 images (primarily tropical vegetation)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALIDATION & METRICS -->
+    <section id="metrics" class="section">
+        <div class="container grid two">
+            <div class="card">
+                <h2>Validation & Metrics</h2>
+                <p class="muted">200-Image Global Test Protocol</p>
+                <div class="divider"></div>
+                <p>
+                    Full Sentinel-2 L2A tiles processed via a physics-only pipeline with no external priors.
+                </p>
+                <div class="table" role="region" aria-label="Global Metrics">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Mean</th>
+                                <th>Target</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Overall Score</td>
+                                <td>83.1%</td>
+                                <td>≥ 70%</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Cloud Reduction</td>
+                                <td>75.3%</td>
+                                <td>≥ 70%</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Edge Preservation</td>
+                                <td>85.0%</td>
+                                <td>≥ 85%</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Avg Processing Time</td>
+                                <td>9.3 s</td>
+                                <td>&lt; 30 s</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Failure Rate</td>
+                                <td>0%</td>
+                                <td>&lt; 15%</td>
+                                <td>✅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Category Snapshot</h3>
+                <div class="table" role="region" aria-label="Category Performance">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Avg Score</th>
+                                <th>Cloud ↓</th>
+                                <th>Pipeline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dense Forest</td>
+                                <td>87.4%</td>
+                                <td>78%</td>
+                                <td>Recovery</td>
+                            </tr>
+                            <tr>
+                                <td>Desert</td>
+                                <td>89.9%</td>
+                                <td>80%</td>
+                                <td>Aurora</td>
+                            </tr>
+                            <tr>
+                                <td>Urban</td>
+                                <td>83.8%</td>
+                                <td>74%</td>
+                                <td>Aurora</td>
+                            </tr>
+                            <tr>
+                                <td>Coastal</td>
+                                <td>79.6%</td>
+                                <td>70%</td>
+                                <td>Aurora</td>
+                            </tr>
+                            <tr>
+                                <td>Snow / Ice</td>
+                                <td>80.9%</td>
+                                <td>72%</td>
+                                <td>Aurora</td>
+                            </tr>
+                            <tr>
+                                <td>Agriculture</td>
+                                <td>80.3%</td>
+                                <td>73%</td>
+                                <td>Aurora</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top:12px"><a href="#viz">See Visualizations →</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- RESULT SHOWCASE -->
+    <section id="results" class="section">
+        <div class="container">
+            <h2>Result Showcase</h2>
+            <p class="muted">
+                Comparative visualization of SkyAlign's coherence stabilization results.
+                Each example demonstrates transition from noisy clouded input to the stabilized output signal or image.
+            </p>
+
+            <div class="grid two" style="margin-top:2rem;">
+
+                <!-- RESULT 1 -->
+                <div class="card gradient">
+                    <h3>Mumbai Light Clouds</h3>
+                    <p class="muted">Thin cloud cover reduced while edge and texture coherence are preserved.</p>
+                    <div class="divider"></div>
+
+                    <div class="result-pair">
+                        <div class="result-img">
+                            <img src="assets/results/mumbai-original.png" alt="Noisy input example 1" loading="lazy" />
+                            <span class="caption">Noisy Input</span>
+                        </div>
+                        <div class="result-arrow">→</div>
+                        <div class="result-img">
+                            <img src="assets/results/mumbai-denoised.png" alt="SkyAlign stabilized output 1"
+                                loading="lazy" />
+                            <span class="caption">SkyAlign Output</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESULT 2 -->
+                <div class="card gradient">
+                    <h3>Beijing Haze</h3>
+                    <p class="muted">
+                        Dense haze corrected through spectral stabilization, restoring urban contrast and surface
+                        coherence.
+                    </p>
+
+                    <div class="divider"></div>
+
+                    <div class="result-pair">
+                        <div class="result-img">
+                            <img src="assets/results/beijing-original.png" alt="Noisy input example 2" loading="lazy" />
+                            <span class="caption">Noisy Input</span>
+                        </div>
+                        <div class="result-arrow">→</div>
+                        <div class="result-img">
+                            <img src="assets/results/beijing-denoised.png" alt="SkyAlign stabilized output 2"
+                                loading="lazy" />
+                            <span class="caption">SkyAlign Output</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PHYSICS-FIRST VS ML -->
+    <section id="benchmarks" class="section">
+        <div class="container grid two">
+            <div class="card">
+                <h2>Insight: Physics-First vs ML</h2>
+                <p class="muted">Deterministic stabilizer dynamics</p>
+                <div class="divider"></div>
+                <p>
+                    SkyAlign does not rely on training or priors. It uses the same Lorenz–Stabilizer system
+                    explored in biomedical and geophysical experiments to restore coherence in atmospheric data.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Performance Benchmark</h3>
+                <div class="table" role="region" aria-label="Benchmark Table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Avg Score</th>
+                                <th>Time / image</th>
+                                <th>Data Requirement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Threshold / Heuristic</td>
+                                <td>~30%</td>
+                                <td>~2 s</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Fmask (Physics-based)</td>
+                                <td>~70%</td>
+                                <td>~20 s</td>
+                                <td>Pre-calibration</td>
+                            </tr>
+                            <tr>
+                                <td>ML (CloudNet)</td>
+                                <td>~82%</td>
+                                <td>60–300 s</td>
+                                <td>Labeled dataset</td>
+                            </tr>
+                            <tr>
+                                <td>SkyAlign v4.5 NEXUS</td>
+                                <td>83.1%</td>
+                                <td>~9.3 s</td>
+                                <td>None ✅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISUALIZATIONS -->
+    <section id="viz" class="section">
+        <div class="container grid two">
+            <div class="card">
+                <h2>Coherence Maps & Visuals</h2>
+                <p class="muted">Suggested gallery / charts</p>
+                <div class="divider"></div>
+                <ul class="bullets">
+                    <li>Global coherence improvement map</li>
+                    <li>NDVI preservation scatter plot</li>
+                    <li>Category score distribution</li>
+                    <li>Aurora vs Recovery pipeline distribution</li>
+                </ul>
+            </div>
+            <div class="card gradient">
+                <h3>Hero Visualization (Placeholder)</h3>
+                <div class="viz" aria-hidden="true">
+                    <svg viewBox="0 0 640 180" class="viz" role="img" aria-label="Cloud to clear morph">
+                        <defs>
+                            <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="currentColor" stop-opacity="0.25" />
+                                <stop offset="100%" stop-color="currentColor" stop-opacity="0.9" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M0 120 C 80 80, 160 150, 240 110 S 400 70, 480 110 560 150, 640 120" fill="none"
+                            stroke="url(#grad)" stroke-width="3" class="trace stroke-eeg" />
+                        <path d="M0 130 C 80 140, 160 135, 240 125 S 400 115, 480 100 560 90, 640 85" fill="none"
+                            stroke="currentColor" opacity="0.35" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEVELOPER ACCESS -->
+    <section id="dev" class="section">
+        <div class="container">
+            <h2>Developer Access</h2>
+            <p class="muted">
+                SkyAlign will be available through the SignalMind SDK and Atmospheric API layer.
+            </p>
+
+            <div class="grid two">
+                <div class="card">
+                    <h3>API Outline</h3>
+                    <div class="table" role="region" aria-label="API Endpoints">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Endpoint</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>/process/sentinel2</code></td>
+                                    <td>Upload raw tile and receive coherence-stabilized output</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/metrics/coherence</code></td>
+                                    <td>Return spectral, coherence, and NDVI improvement metrics</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/compare/benchmark</code></td>
+                                    <td>Run SkyAlign vs baseline/ML pipelines</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>SDK Concept</h3>
+                    <pre class="code"><code>from signalmind import SkyAlign
+
+result, metrics = SkyAlign.process(
+    tile="sentinel_tile.tiff",
+    mode="auto"
+)
+print(metrics["cloud_reduction_pct"])</code></pre>
+                    <p class="muted" style="margin-top:8px">Python interface shown for illustration of integration
+                        style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH SUMMARY -->
+    <section class="section">
+        <div class="container">
+            <blockquote class="card" style="font-size:1.05rem;">
+                “SkyAlign v4.5 NEXUS demonstrates that the SignalMind Stabilizer generalizes beyond physiological and
+                seismic domains — evidence that coherence dynamics, not training, are the foundation of perception
+                systems.”
+                <div class="muted" style="margin-top:8px">— SignalMind Research Division</div>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- FUTURE WORK -->
+    <section class="section">
+        <div class="container grid two">
+            <div class="card">
+                <h2>Future Work</h2>
+                <ul class="bullets">
+                    <li>Sentinel-3 and MODIS compatibility</li>
+                    <li>Thermal and radar spectra extensions</li>
+                    <li>Aurora gate optimization toward sub-10 ms processing</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Footer Note</h3>
+                <p class="muted">
+                    “SkyAlign is not an AI model — it is a stabilizer of physical coherence.
+                    The same equations that restore ECG clarity and seismic stability now clean the skies.”
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCES / CTA -->
+    <section id="resources" class="section">
+        <div class="container grid two">
+            <div class="card">
+                <h3>Resources</h3>
+                <ul class="bullets">
+                    <li><a href="#metrics">Validation Summary → View Results</a></li>
+                    <li><a href="#">Metrics Dataset → Download</a></li>
+                    <li><a href="#dev">API & SDK → Outline</a></li>
+                </ul>
+            </div>
+            <div id="contact" class="card">
+                <h3>Connect with SignalMind</h3>
+                <p class="muted">
+                    For collaborations, technical briefings, or investor materials, reach out to the research team.
+                </p>
+                <div class="cta">
+                    <a class="btn btn-primary" href="#">Contact Research Team</a>
+                    <a class="btn btn-ghost" href="#">Request Brief</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container"
+            style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+            <div>© <span id="year"></span> SignalMind • SkyAlign v4.5 NEXUS</div>
+            <div class="muted">Part of the SignalMind Universal Stabilizer Research Framework</div>
+        </div>
+    </footer>
+
+    <script>
+        // Progressive enhancement; page works without JS
+        (function () {
+            var y = document.getElementById('year');
+            if (y) y.textContent = new Date().getFullYear();
+        }());
+    </script>
+</body>
+
+</html>

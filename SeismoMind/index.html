@@ -1,0 +1,360 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SignalMind • SeismoMind</title>
+  <meta name="description"
+        content="SeismoMind — physics-based stabilization for seismic wavefields by SignalMind." />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="logo"></span> SignalMind</div>
+      <nav aria-label="Primary">
+        <a href="#hero">Overview</a>
+        <a href="#stack">Technology</a>
+        <a href="#challenge">Data</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#results">Results</a>
+        <a href="#insight">Insight</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="hero" class="hero">
+    <div class="orbs"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+    <div class="container">
+      <span class="pill">SignalMind Research Suite • /projects/seismomind</span>
+      <h1>SeismoMind™ — Earth’s Hidden Stability, Revealed</h1>
+      <p class="lead">
+        A universal stabilizer for seismic wavefields. Interprets subsurface vibrations as structured physical flows
+        to recover coherence in real time — the same deterministic core that powers PulseFlow and SkyAlign.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#metrics">View Performance →</a>
+        <a class="btn btn-ghost" href="#stack">Explore Technology</a>
+        <a class="btn btn-ghost" href="#contact">Contact Research Team</a>
+      </div>
+
+      <div class="metrics">
+        <div class="metric">
+          <div class="label">Noise Floor</div>
+          <div class="value">+12.2 dB ↓</div><span class="spark"></span>
+        </div>
+        <div class="metric">
+          <div class="label">Phase Coherence</div>
+          <div class="value">R = 0.79</div><span class="spark"></span>
+        </div>
+        <div class="metric">
+          <div class="label">Amplitude Drift</div>
+          <div class="value">&lt; 2.1 %</div><span class="spark"></span>
+        </div>
+        <div class="metric">
+          <div class="label">Integrity</div>
+          <div class="value">Morphology Preserved</div><span class="spark"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <div class="container grid two">
+      <div class="card gradient">
+        <h2>The Frontier of Stabilized Earth Systems</h2>
+        <p class="muted">From filtering → to stabilization</p>
+        <div class="divider"></div>
+        <p>
+          SeismoMind extends the SignalMind Universal Stabilizer Framework into geophysics. Rather than treating
+          seismic traces as noise to be filtered, SeismoMind stabilizes the energy landscape of the signal, preserving
+          spatial–temporal phase geometry as waveforms propagate through the medium.
+        </p>
+        <ul class="bullets">
+          <li>Deterministic stabilization — no learning or priors</li>
+          <li>Phase continuity and morphology preserved</li>
+          <li>Works across microtremors to macro events</li>
+          <li>Cross-domain lineage: PulseFlow (bio), SkyAlign (atmospheric)</li>
+        </ul>
+      </div>
+
+      <!-- Vertical Concept Diagram -->
+      <div class="card gradient">
+        <h3>Conceptual Diagram</h3>
+        <p class="muted">Noisy Trace ↓ Stabilizer Core ↓ Wavefield Consensus ↓ Coherent Output</p>
+
+        <div class="viz vertical large" aria-hidden="true">
+          <svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid meet"
+               class="viz" role="img" aria-label="Vertical Stabilizer Flow">
+            <defs>
+              <linearGradient id="flow-v" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--accent1)" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="var(--accent2)" stop-opacity="0.9"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                <feMerge>
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <marker id="arrowhead-v" markerWidth="8" markerHeight="8" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="currentColor"/>
+              </marker>
+            </defs>
+
+            <!-- background flow line -->
+            <path d="M200 80 L200 720" stroke="url(#flow-v)" stroke-width="2" opacity="0.25" fill="none"/>
+
+            <!-- boxes -->
+            <rect x="110" y="40"  width="180" height="80" rx="14" class="box"/>
+            <rect x="110" y="200" width="180" height="100" rx="14" class="box glow" filter="url(#glow)"/>
+            <rect x="110" y="380" width="180" height="100" rx="14" class="box"/>
+            <rect x="110" y="560" width="180" height="80"  rx="14" class="box"/>
+
+            <!-- arrows -->
+            <path d="M200 120 L200 200" class="arrow" marker-end="url(#arrowhead-v)"/>
+            <path d="M200 300 L200 380" class="arrow" marker-end="url(#arrowhead-v)"/>
+            <path d="M200 480 L200 560" class="arrow" marker-end="url(#arrowhead-v)"/>
+
+            <!-- labels -->
+            <text x="200" y="85"  text-anchor="middle" class="label">Noisy Trace</text>
+            <text x="200" y="250" text-anchor="middle" class="label">Stabilizer Core</text>
+            <text x="200" y="270" text-anchor="middle" class="label small">Lorenz • Entropy Gate</text>
+            <text x="200" y="430" text-anchor="middle" class="label">Wavefield Consensus</text>
+            <text x="200" y="595" text-anchor="middle" class="label">Coherent Output</text>
+
+            <!-- pulse dots -->
+            <circle cx="200" cy="160" r="4" class="pulse"/>
+            <circle cx="200" cy="340" r="4" class="pulse delay1"/>
+            <circle cx="200" cy="520" r="4" class="pulse delay2"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY STACK -->
+  <section id="stack" class="section">
+    <div class="container grid two">
+      <div class="card">
+        <h2>Technology Stack</h2>
+        <p class="muted">Three subsystems, one stabilizer model</p>
+        <div class="divider"></div>
+        <ul class="bullets">
+          <li><strong>Adaptive Enstrophy Scaling</strong> — weighted regulator that balances kinetic energy across windows, suppressing incoherent drift while preserving oscillation fidelity.</li>
+          <li><strong>Lorenz–Wavefield Evolution</strong> — multi-dimensional coupling that maintains spatial–temporal phase continuity through propagation.</li>
+          <li><strong>Entropy-Gated Stabilization</strong> — instantaneous spectral complexity informs dynamic stabilization strength for living, responsive denoising.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Mapping to Seismic Space</h3>
+        <div class="table" role="region" aria-label="Stabilizer Adaptation">
+          <table>
+            <thead>
+              <tr><th>Component</th><th>Original Domain</th><th>Seismic Adaptation</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>ECG Stabilizer</td><td>Temporal signal correction</td><td>Trace-wise energy regulation</td></tr>
+              <tr><td>EEG Coherence</td><td>Spatial–temporal coherence</td><td>Array/Network phase alignment</td></tr>
+              <tr><td>Lorenz Integrator</td><td>System dynamics</td><td>Wavefield evolution constraints</td></tr>
+              <tr><td>Entropy Gate</td><td>Neural noise control</td><td>Band-limited uncertainty control</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA CHALLENGE -->
+  <section id="challenge" class="section">
+    <div class="container grid two">
+      <div class="card gradient accent-eeg">
+        <h2>The Data Challenge</h2>
+        <p class="muted">From chaos to coherence</p>
+        <div class="divider"></div>
+        <p>
+          Seismic records are polluted by low-frequency hums, drilling noise, atmospheric coupling, and random
+          cross-line interference. Conventional denoisers flatten; SeismoMind stabilizes — keeping the physics intact.
+        </p>
+        <ul class="bullets">
+          <li>Global sources: GEOFON, IRIS, regional broadband stations</li>
+          <li>Durations: 50 s windows → full-day events</li>
+          <li>Frequency: 0.05–45 Hz dynamic scaling</li>
+          <li>Validation: coherence gain, entropy drop, phase retention</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Key Outcomes</h3>
+        <div class="table" role="region" aria-label="Outcomes">
+          <table>
+            <thead>
+              <tr><th>Metric</th><th>Baseline (Avg)</th><th>SeismoMind (Avg)</th><th>Gain</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Noise floor (dB)</td><td>–2.1</td><td>–14.3</td><td>+12.2 dB</td></tr>
+              <tr><td>Phase coherence (R)</td><td>0.52</td><td>0.79</td><td>+0.27</td></tr>
+              <tr><td>Amplitude drift</td><td>5.8 %</td><td>&lt; 2.1 %</td><td>63 % ↓</td></tr>
+              <tr><td>Morphology</td><td>Unstable</td><td>Preserved</td><td>✅</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="margin-top:8px">Stable, interpretable seismic fields without hallucination artifacts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALIDATION & METRICS -->
+  <section id="metrics" class="section">
+    <div class="container">
+      <h2>Validation & Metrics</h2>
+      <p class="muted">Representative evaluation across stations and conditions</p>
+      <div class="divider"></div>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Coherence & Stability</h3>
+          <div class="table" role="region" aria-label="Coherence">
+            <table>
+              <thead>
+                <tr><th>Measure</th><th>Description</th><th>Effect</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Coherence Gain</td><td>Phase alignment across channels</td><td>↑ Significant</td></tr>
+                <tr><td>Spectral Entropy</td><td>Order vs randomness</td><td>↓ Reduced</td></tr>
+                <tr><td>Phase Retention</td><td>Lag-free morphology</td><td>Preserved</td></tr>
+                <tr><td>Drift Suppression</td><td>Baseline stability</td><td>Strong</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Station Scope</h3>
+          <div class="table" role="region" aria-label="Scope">
+            <table>
+              <thead>
+                <tr><th>Set</th><th>Duration</th><th>Band</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>GEOFON / IRIS</td><td>50 s → 24 h</td><td>0.05–45 Hz</td></tr>
+                <tr><td>Regional Broadband</td><td>Event windows</td><td>0.1–20 Hz</td></tr>
+                <tr><td>Microtremor Arrays</td><td>Short bursts</td><td>1–10 Hz</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INSIGHT -->
+  <section id="insight" class="section">
+    <div class="container grid two">
+      <div class="card">
+        <h2>What This Means</h2>
+        <p class="muted">A shift in Earth-data processing</p>
+        <div class="divider"></div>
+        <ul class="bullets">
+          <li>Filtering → <strong>Stabilization</strong></li>
+          <li>Correlation → <strong>Coherence</strong></li>
+          <li>Prediction → <strong>Preservation</strong></li>
+        </ul>
+        <p>
+          By encoding stabilizer equations into seismic space, SeismoMind transforms raw, noisy data into
+          physically consistent and decision-ready waveforms.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Vision: Planetary-Scale Stability</h3>
+        <ul class="bullets">
+          <li>Earthquake precursors — stabilized phase drifts</li>
+          <li>Seafloor dynamics — offshore vibration mapping</li>
+          <li>Planetary resonance — Mars/Lunar seismic stabilization</li>
+          <li>Unified signal physics — bio, geo, and atmospheric coherence</li>
+        </ul>
+        <blockquote class="muted" style="margin-top:8px">
+          “If PulseFlow brings stability to the body, and SkyAlign brings clarity to the sky — SeismoMind brings balance to the planet.”
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2>Research Timeline</h2>
+      <div class="table" role="region" aria-label="Timeline">
+        <table>
+          <thead>
+            <tr><th>Phase</th><th>Focus</th><th>Status</th><th>Outcome</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>I</td><td>Lorenz–Navier prototype</td><td>✅</td><td>Core stability verified</td></tr>
+            <tr><td>II</td><td>Field dataset evaluation</td><td>✅</td><td>12–18 dB noise reduction</td></tr>
+            <tr><td>III</td><td>Global coherence benchmarking</td><td>🧪</td><td>Phase-locked performance</td></tr>
+            <tr><td>IV</td><td>Real-time adaptive pipeline</td><td>🚧</td><td>API/SDK integration planned</td></tr>
+            <tr><td>V</td><td>Predictive coherence modeling</td><td>🎯 2026</td><td>Toward planetary cognition layer</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES / CTA -->
+  <section id="resources" class="section">
+    <div class="container grid two">
+      <div class="card">
+        <h3>Resources</h3>
+        <ul class="bullets">
+          <li><a href="#metrics">Performance Summary → View Metrics</a></li>
+          <li><a href="#stack">Technology → Read Overview</a></li>
+          <li><a href="#results">Visuals → Result Showcase</a></li>
+          <li><a href="#">API & SDK → Outline</a></li>
+        </ul>
+      </div>
+      <div id="contact" class="card">
+        <h3>Connect with SignalMind</h3>
+        <p class="muted">
+          For collaborations, technical briefings, or investor materials, reach out to the research team.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#">Contact Research Team</a>
+          <a class="btn btn-ghost" href="#">Request Brief</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container"
+         style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> SignalMind • SeismoMind</div>
+      <div class="muted">Part of the SignalMind Universal Stabilizer Research Framework</div>
+    </div>
+  </footer>
+
+  <!-- Minimal enhancements -->
+  <script>
+    (function () {
+      var y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    }());
+  </script>
+
+</body>
+
+</html>

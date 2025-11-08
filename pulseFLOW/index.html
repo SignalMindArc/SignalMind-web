@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SignalMind • PulseFlow Suite</title>
+  <meta name="description"
+        content="Deterministic stabilization for biomedical signals — PulseFlow Suite by SignalMind." />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="logo"></span> SignalMind</div>
+      <nav aria-label="Primary">
+        <a href="#suite">Suite</a>
+        <a href="#ecg">ECG</a>
+        <a href="#eeg">EEG</a>
+        <a href="#sdk">SDK</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="suite" class="hero">
+    <div class="orbs"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+    <div class="container">
+      <span class="pill">Deterministic Stabilization for Biomedical Signals</span>
+      <h1>pulseFLOW Suite</h1>
+      <p class="lead">
+        A physics-based framework delivering real-time clarity across cardiac and neural waveforms —
+        built on optimization and control, not probabilistic AI.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#cta">Contact Research Team →</a>
+        <a class="btn btn-ghost" href="#resources">Read Technical Overview</a>
+      </div>
+      <div class="metrics">
+        <div class="metric">
+          <div class="label">Zero Learning</div>
+          <div class="value">Deterministic</div><span class="spark"></span>
+        </div>
+        <div class="metric">
+          <div class="label">Clinical Integrity</div>
+          <div class="value">Feature-preserving</div><span class="spark"></span>
+        </div>
+        <div class="metric">
+          <div class="label">Integration</div>
+          <div class="value">SDK + API (planned)</div><span class="spark"></span>
+        </div>
+        <div class="metric">
+          <div class="label">Runtime</div>
+          <div class="value">CPU / CUDA</div><span class="spark"></span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="waveband" aria-hidden="true"></div> -->
+  </main>
+
+  <!-- ECG MODULE -->
+  <section id="ecg" class="section">
+    <div class="container grid two">
+      <div class="card gradient accent-ecg">
+        <h2>PulseFlow ECG</h2>
+        <p class="muted">Parallel AR Optimization + Clinical Overlay</p>
+        <div class="viz" aria-hidden="true">
+          <svg viewBox="0 0 600 110" class="viz" role="img" aria-label="Stylized ECG waveform">
+            <path class="trace stroke-ecg"
+              d="M0 70 C 40 70, 60 70, 80 70 L 120 70 140 30 150 70 155 50 165 90 180 70 220 70 240 20 255 70 265 55 275 95 290 70 600 70" />
+          </svg>
+        </div>
+        <div class="divider"></div>
+        <p>
+          Restores clinical fidelity in real-world cardiac data, dynamically preserving R-peak count, heart rate,
+          and waveform morphology.
+        </p>
+        <ul class="bullets">
+          <li>Real-time adaptive AR order tuning (4 → 20)</li>
+          <li>Stabilizer-driven drift suppression</li>
+          <li>Clinical R-peak alignment overlay</li>
+          <li>CUDA-accelerated optimization</li>
+        </ul>
+        <p>
+          <span class="badge">RLS_AR</span>
+          <span class="badge">Adaptive Gating</span>
+          <span class="badge">Parallel Ensemble</span>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Core Metrics</h3>
+        <div class="table" role="region" aria-label="ECG metrics">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mean SNR Gain</td>
+                <td>+5.65 dB</td>
+              </tr>
+              <tr>
+                <td>R-Peak Preservation</td>
+                <td>0.962</td>
+              </tr>
+              <tr>
+                <td>Δ Heart Rate</td>
+                <td>0.00 bpm</td>
+              </tr>
+              <tr>
+                <td>Δ NN Interval</td>
+                <td>0.00 ms</td>
+              </tr>
+              <tr>
+                <td>Processing Time</td>
+                <td>20 min (48 records)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:12px"><a href="#cta">View ECG Module Brief →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EEG MODULE -->
+  <section id="eeg" class="section">
+    <div class="container grid two">
+      <div class="card gradient accent-eeg">
+        <h2>PulseFlow EEG</h2>
+        <p class="muted">Nonlinear Adaptive Neural Stabilization</p>
+        <div class="viz" aria-hidden="true">
+          <svg viewBox="0 0 600 110" class="viz" role="img" aria-label="Stylized EEG waveform">
+            <path class="trace stroke-eeg"
+              d="M0 70 C 40 40, 80 100, 120 70 S 200 40, 240 70 320 100, 360 70 440 40, 480 70 560 100, 600 70" />
+          </svg>
+        </div>
+        <div class="divider"></div>
+        <p>
+          Reconstructs cortical rhythms under high interference, ensuring phase and spectral consistency across
+          alpha and beta bands.
+        </p>
+        <ul class="bullets">
+          <li>Nonlinear ensemble prediction with self-adaptive gates</li>
+          <li>Frequency-coherent, phase-independent correction (8–30 Hz)</li>
+          <li>EEG-BCI pipeline ready (160 Hz)</li>
+          <li>Built-in MI &amp; SSIM quality tracking</li>
+        </ul>
+        <p>
+          <span class="badge">Awareness Gate</span>
+          <span class="badge">Spectral Fidelity</span>
+          <span class="badge">Deterministic</span>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Core Metrics</h3>
+        <div class="table" role="region" aria-label="EEG metrics">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SNR Gain</td>
+                <td>+8.56 dB</td>
+              </tr>
+              <tr>
+                <td>Spectral Coherence</td>
+                <td>0.525</td>
+              </tr>
+              <tr>
+                <td>Band Power Ratio (α/β)</td>
+                <td>2.24×</td>
+              </tr>
+              <tr>
+                <td>Mutual Information</td>
+                <td>0.586</td>
+              </tr>
+              <tr>
+                <td>Structural Similarity (1D)</td>
+                <td>0.054</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:12px"><a href="#cta">View EEG Module Brief →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SDK SECTION -->
+  <section id="sdk" class="section">
+    <div class="container">
+      <h2>One SDK, Multiple Biosignals</h2>
+      <p class="muted">
+        Conceptual SDK and API roadmap designed for integration with Python, NumPy, PyTorch, and C++ bindings.
+        Torch &amp; ONNX runtime support targeted for embedded inference.
+      </p>
+      <div class="table" role="region" aria-label="SDK Table">
+        <table>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Class</th>
+              <th>Typical Input</th>
+              <th>Output</th>
+              <th>Supported Rates</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ECG</td>
+              <td>PulseFlowECG()</td>
+              <td>1D cardiac voltage series</td>
+              <td>stabilized waveform</td>
+              <td>360 Hz</td>
+            </tr>
+            <tr>
+              <td>EEG</td>
+              <td>PulseFlowEEG()</td>
+              <td>1D neural time series</td>
+              <td>denoised spectral signal</td>
+              <td>160 Hz</td>
+            </tr>
+            <tr>
+              <td>EMG</td>
+              <td>PulseFlowEMG()</td>
+              <td>1D muscular channel</td>
+              <td>motion-corrected output</td>
+              <td>TBD</td>
+            </tr>
+            <tr>
+              <td>BCI</td>
+              <td>PulseFlowBridge()</td>
+              <td>EEG + ECG pair</td>
+              <td>coherence signal</td>
+              <td>100–500 Hz</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH INSIGHT -->
+  <section class="section">
+    <div class="container">
+      <blockquote class="card" style="font-size:1.05rem;">
+        “Unlike deep nets trained on synthetic noise, PulseFlow models emerge from physical stability equations —
+        bridging signal dynamics with adaptive control theory.”
+        <div class="muted" style="margin-top:8px">— SignalMind Research Division</div>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- RESOURCES / CTA -->
+  <section id="resources" class="section">
+    <div class="container grid two">
+      <div class="card">
+        <h3>Developer Resources</h3>
+        <ul class="bullets">
+          <li><a href="#cta">Concept Paper → Request PDF</a></li>
+          <li><a href="#cta">API Outline → View Roadmap</a></li>
+          <li><a href="#cta">Developer Briefing → Contact Team</a></li>
+        </ul>
+      </div>
+      <div id="cta" class="card">
+        <h3>Build with PulseFlow</h3>
+        <p class="muted">
+          Connect with the team to discuss the roadmap, technical details, and collaboration opportunities.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#">Contact Research Team</a>
+          <a class="btn btn-ghost" href="#">Get Updates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container"
+         style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> SignalMind • PulseFlow Suite</div>
+      <div class="muted">Powered by SignalMind Universal Stabilizer</div>
+    </div>
+  </footer>
+
+  <script>
+    // Progressive enhancement; page works without JS
+    (function () {
+      var y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    }());
+  </script>
+</body>
+
+</html>
